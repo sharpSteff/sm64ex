@@ -1,4 +1,4 @@
-CXX := g++
+CXX := /usr/local/bin/gcc-10
 
 libaudiofile.a: audiofile.o
 	ar rcs libaudiofile.a audiofile.o

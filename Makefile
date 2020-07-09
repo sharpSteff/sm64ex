@@ -465,6 +465,7 @@ ifeq ($(WINDOWS_BUILD),1) # fixes compilation in MXE on Linux and WSL
   OBJDUMP := $(CROSS)objdump
 else ifeq ($(OSX_BUILD),1)
   CPP := cpp-9 -P
+  CC := /usr/local/bin/gcc-10
   OBJDUMP := i686-w64-mingw32-objdump
   OBJCOPY := i686-w64-mingw32-objcopy
 else # Linux & other builds
